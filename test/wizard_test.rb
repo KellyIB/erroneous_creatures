@@ -20,7 +20,7 @@ class WizardTest < Minitest::Test
   end
 
   def test_is_not_always_bearded
-    wizard = Wizard.new("Valerie", bearded: false)
+    wizard = Wizard.new("Valerie", bearded = false)
     refute wizard.bearded?
   end
 

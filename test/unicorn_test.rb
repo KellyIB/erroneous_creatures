@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require '.lib/unicorn'
+require_relative '../lib/unicorn'
 
 class UnicornTest < Minitest::Test
 
@@ -18,7 +18,7 @@ class UnicornTest < Minitest::Test
   end
 
   def test_it_does_not_have_to_be_white
-    unicorn = Unicorn.new("Barbara", "purple")
+    unicorn = Unicorn.new("Barbara", color = "purple")
     assert_equal "purple", unicorn.color
     assert_equal false, unicorn.white?
     refute unicorn.white?

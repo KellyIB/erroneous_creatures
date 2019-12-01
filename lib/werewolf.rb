@@ -1,6 +1,5 @@
 class Werewolf
-  attr_reader :name
-              :location
+  attr_reader :name, :location
 
   attr_accessor :human,
                 :change,
